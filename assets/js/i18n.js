@@ -3,10 +3,15 @@ const i18n = {
   translations: {},
 
   async load(lang) {
-    const response = await fetch(`./locales/${lang}.json`);
-    this.translations = await response.json();
-    this.currentLang = lang;
-    this.apply();
+    try {
+      const response = await fetch(`./locales/${lang}.json`);
+      if (!response.ok) throw new Error('Failed to load');
+      this.translations = await response.json();
+      this.currentLang = lang;
+      this.apply();
+    } catch (e) {
+      console.error("I18n load error:", e);
+    }
   },
 
   apply() {
