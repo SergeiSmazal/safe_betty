@@ -1,0 +1,33 @@
+:root {
+  /* Colors */
+  --color-primary:     #E8B4B8;
+  --color-secondary:   #A8D5BA;
+  --color-cta:         #D4AF37;
+  --color-bg:          #FFF8F5;
+  --color-bg-card:     #FFFFFF;
+  --color-bg-accent:   #FFF0F7;
+  --color-text:        #2C2C2C;
+  --color-text-muted:  #666666;
+  --color-text-light:  #999999;
+  --color-success:     #4CAF50;
+  --color-warning:     #FF9800;
+  --color-error:       #F44336;
+
+  /* Shadows */
+  --shadow-sm:  0 2px 8px rgba(232, 180, 184, 0.15);
+  --shadow-md:  0 4px 20px rgba(232, 180, 184, 0.25);
+  --shadow-lg:  0 8px 40px rgba(232, 180, 184, 0.35);
+  --shadow-cta: 0 4px 15px rgba(212, 175, 55, 0.4);
+
+  /* Typography */
+  --font-heading:  'Cormorant Garamond', Georgia, serif;
+  --font-body:     'Montserrat', system-ui, sans-serif;
+
+  /* Spacing */
+  --space-4:   1rem;
+  --space-8:   2rem;
+
+  /* Radius */
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}

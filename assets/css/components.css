@@ -1,0 +1,82 @@
+/* Hero Section ... (previous code) */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-cta);
+}
+
+/* Story Section */
+.story {
+  padding: var(--space-8);
+  background-color: var(--color-bg-card);
+}
+
+.story-content {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.story h2 {
+  margin-bottom: var(--space-4);
+  font-size: var(--text-h2);
+}
+/* Story Section ... */
+.story p {
+  margin-bottom: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+/* Donate Section */
+.donate {
+  padding: var(--space-8);
+  text-align: center;
+}
+
+.progress-bar {
+  height: 16px;
+  background-color: #eee;
+  border-radius: var(--radius-full);
+  margin: var(--space-4) 0;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(to right, var(--color-primary), var(--color-cta));
+  width: 0%; /* Will be set via JS */
+  transition: width 1s ease-out;
+}
+
+/* Nav */
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,248,245, 0.9);
+  backdrop-filter: blur(10px);
+  padding: var(--space-4);
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* Gallery */
+.gallery {
+  padding: var(--space-8);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+/* Footer */
+footer {
+  background: var(--color-text);
+  color: var(--color-bg);
+  padding: var(--space-8);
+  text-align: center;
+}

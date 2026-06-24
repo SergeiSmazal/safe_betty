@@ -1,64 +1,64 @@
-# План реализации Help Betty (betty-help)
+# Help Betty (betty-help) Implementation Plan
 
-Этот документ содержит план реализации проекта.
+This document contains the project implementation plan.
 
-## Дорожная карта и фазы (с поддержкой двух языков)
+## Roadmap & Phases (Bilingual Support)
 
-### Фаза 0 — Подготовка и планирование ✅
-- [x] Разработка стратегии сбора средств.
-- [x] Написание текстов на английском языке.
-- [x] Написание текстов на немецком языке.
-- [x] Создание печатного флаера А4 (DOCX) с фотографиями.
-- [x] Выбор дизайн-системы из UI-UX-Pro-Max.
-- [x] Создание README + Дорожной карты.
+### Phase 0 — Preparation & Planning ✅
+- [x] Fundraising strategy development.
+- [x] Writing texts in English.
+- [x] Writing texts in German.
+- [x] Create A4 printable flyer (DOCX) with photos.
+- [x] Select design system from UI-UX-Pro-Max.
+- [x] Create README + Roadmap.
 
-### Фаза 1 — Запуск платформ ⬜
-- [x] Создание репозитория GitHub `betty-help` (публичный).
-- [x] Загрузка README.md в репозиторий.
-- [ ] Активация GitHub Pages.
-- [x] Создание кампании на **GoFundMe**.
-- [ ] Создание проекта на **Betterplace.org**.
-- [x] Создание Instagram `@bettyhomecat`.
-- [x] Публикация первой фотографии в Instagram + описание.
-- [x] Написание кода сайта с реальными ссылками (основа готова, ссылки нужно вставить).
-- [ ] Обновление QR-кода на финальный URL GitHub Pages.
-- [ ] Повторная печать флаеров с финальным QR-кодом.
+### Phase 1 — Platform Launch ⬜
+- [x] Create GitHub repository `betty-help` (public).
+- [x] Upload README.md to the repository.
+- [ ] Activate GitHub Pages.
+- [x] Create **GoFundMe** campaign.
+- [ ] Create **Betterplace.org** project.
+- [x] Create Instagram `@bettyhomecat`.
+- [x] Post first photo on Instagram + caption.
+- [x] Write website code with real links (base ready, links need to be inserted).
+- [ ] Update QR code to final GitHub Pages URL.
+- [ ] Reprint flyers with the final QR code.
 
-### Фаза 2 — Разработка и развертывание сайта ⬜
-- [ ] Реализация архитектуры для двух языков (DE/EN) + переключатель языка.
-- [ ] `index.html` базовая структура (все секции).
-- [ ] `assets/css/variables.css` — Токены дизайна.
-- [ ] `assets/css/base.css` — Сброс стилей + типографика.
-- [ ] Секция Hero с фотографиями.
-- [ ] Секция с историей: добавление подробностей про FORL, возраст (11 лет) и финансовые трудности.
-- [ ] `assets/css/components.css` — Кнопки, карточки.
-- [ ] `assets/css/animations.css` — Ключевые кадры.
-- [ ] Создание `data/donations.json` (нулевые значения).
-- [ ] `assets/js/donations.js` — API + Fetch.
-- [ ] Реализация полосы прогресса.
+### Phase 2 — Website Development & Deployment ⬜
+- [ ] Implement architecture for two languages (DE/EN) + language switcher.
+- [ ] `index.html` base structure (all sections).
+- [ ] `assets/css/variables.css` — Design Tokens ([see TECHNICAL_SPEC.md](TECHNICAL_SPEC.md#design-system--ui-specification)).
+- [ ] `assets/css/base.css` — CSS reset + typography ([see TECHNICAL_SPEC.md](TECHNICAL_SPEC.md#typography)).
+- [ ] Hero section with photos.
+- [ ] Story section: add details about FORL, age (11 years), and financial difficulties.
+- [ ] `assets/css/components.css` — Buttons, cards ([see TECHNICAL_SPEC.md](TECHNICAL_SPEC.md#component-map)).
+- [ ] `assets/css/animations.css` — Keyframes ([see TECHNICAL_SPEC.md](TECHNICAL_SPEC.md#animation-specification)).
+- [ ] Create `data/donations.json` (zero values).
+- [ ] `assets/js/donations.js` — API + Fetch ([see TECHNICAL_SPEC.md](TECHNICAL_SPEC.md#donation-integration--api)).
+- [ ] Implement progress bar.
 - [ ] `assets/js/animations.js` — Scroll-Reveal.
-- [ ] Кнопки донатов (GoFundMe, Betterplace, PayPal, IBAN).
-- [ ] Липкая навигация + бургер-меню.
-- [ ] Фотогалерея.
-- [ ] `assets/css/responsive.css` — 4 контрольные точки (брейкпоинта).
-- [ ] Локальное тестирование (все браузеры + мобильные).
-- [ ] Push в GitHub → активация GitHub Pages.
-- [ ] Обновление ссылки в Instagram Bio на сайт.
+- [ ] Donation buttons (GoFundMe, Betterplace, PayPal, IBAN).
+- [ ] Sticky navigation + burger menu.
+- [ ] Photo gallery.
+- [ ] `assets/css/responsive.css` — 4 breakpoints.
+- [ ] Local testing (all browsers + mobile).
+- [ ] Push to GitHub → Activate GitHub Pages.
+- [ ] Update Instagram Bio link to the website.
 
-### Фаза 3 — Распространение в Германии и мире 📣
-- [ ] Группы Facebook (помощь животным, кошки в беде, Гессен).
-- [ ] Контакт с обществом защиты животных Франкфурта/Оффенбаха.
-- [ ] Размещение флаеров (ветеринары, супермаркеты, аптеки, dm).
+### Phase 3 — Dissemination in Germany & Globally 📣
+- [ ] Facebook groups (animal aid, cats in need, Hessen).
+- [ ] Contact animal welfare society of Frankfurt/Offenbach.
+- [ ] Place flyers (veterinarians, supermarkets, pharmacies, dm).
 - [ ] Reddit (r/germany, r/frankfurt).
-- [ ] Просьба к друзьям и семье поделиться.
-- [ ] Использование хештегов в Instagram.
+- [ ] Ask friends and family to share.
+- [ ] Use Instagram hashtags.
 
-### Фаза 4 — Обновления и прозрачность 🔄
-- [ ] Ежедневное обновление `data/donations.json`.
-- [ ] Еженедельные обновления в Instagram.
-- [ ] Посты о вехах (25% / 50% / 75% / 100%).
-- [ ] Обновления на GoFundMe и Betterplace.
-- [ ] Индивидуальные благодарности крупным спонсорам.
-- [ ] После операции: публикация фотографий Бетти.
-- [ ] Заключительная кампания: "Бетти без боли!".
-- [ ] Публичный отчет о расходах.
+### Phase 4 — Updates & Transparency 🔄
+- [ ] Daily update of `data/donations.json`.
+- [ ] Weekly updates on Instagram.
+- [ ] Milestone posts (25% / 50% / 75% / 100%).
+- [ ] Updates on GoFundMe and Betterplace.
+- [ ] Individual thank-you messages to major donors.
+- [ ] After surgery: post photos of Betty.
+- [ ] Final campaign: "Betty is pain-free!".
+- [ ] Public expense report.
