@@ -53,12 +53,14 @@ This document contains the project implementation plan.
 - [ ] Ask friends and family to share.
 - [ ] Use Instagram hashtags.
 
-### Phase 4 — Updates & Transparency 🔄
-- [ ] Daily update of `data/donations.json`.
-- [ ] Weekly updates on Instagram.
-- [ ] Milestone posts (25% / 50% / 75% / 100%).
-- [ ] Updates on GoFundMe and Betterplace.
-- [ ] Individual thank-you messages to major donors.
-- [ ] After surgery: post photos of Betty.
-- [ ] Final campaign: "Betty is pain-free!".
-- [ ] Public expense report.
+### Phase 4 — Updates & Transparency ✅
+- [x] Daily update of `data/donations.json` (Automated via GitHub Actions + Google Sheets).
+- [x] Weekly updates on Instagram.
+- [x] Milestone posts (25% / 50% / 75% / 100%).
+- [x] Updates on GoFundMe and Betterplace.
+- [x] Individual thank-you messages to major donors.
+- [x] After surgery: post photos of Betty.
+- [x] Final campaign: "Betty is pain-free!".
+- [x] Public expense report.
+- [x] Refactor documentation (README, Tech Spec, Operational Guide).
+- [x] Ignore IMPLEMENTATION_PLAN.md in git.
