@@ -79,6 +79,8 @@ This document contains the detailed technical specifications, design system, and
 `assets/js/donations.js` fetches data from:
 `https://api.betterplace.org/de/api_v4/fundraising_events/{ID}.json`
 
+*See [Operational Guide](OPERATIONAL_GUIDE.md#infrastructure--data-flow) for data flow details.*
+
 ### Manual Data (`data/donations.json`)
 ```json
 {
@@ -88,3 +90,4 @@ This document contains the detailed technical specifications, design system, and
   "updated":  "2026-06-24"
 }
 ```
+*See [Operational Guide](OPERATIONAL_GUIDE.md#infrastructure--data-flow) for update workflow.*

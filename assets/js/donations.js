@@ -1,4 +1,5 @@
 const GOAL = 1200;
+const GOFUNDME_LINK = 'https://gofund.me/d271bda22';
 
 async function fetchManual() {
   const res = await fetch('./data/donations.json');

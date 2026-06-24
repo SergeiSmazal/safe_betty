@@ -31,3 +31,4 @@ git push
 ## 🏗️ Project Documentation
 - [Implementation Plan](IMPLEMENTATION_PLAN.md)
 - [Technical Specification](TECHNICAL_SPEC.md)
+- [Operational Guide](OPERATIONAL_GUIDE.md)
