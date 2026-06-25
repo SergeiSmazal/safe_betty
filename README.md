@@ -8,7 +8,7 @@
 > **Betty is 11 years old, suffering from inflamed teeth and an autoimmune disease.**  
 > We are raising 1,250 € for a dental extraction.
 
-[🌐 Website](https://SergeiSmazal.github.io/betty-help) • [💛 GoFundMe](#) • [💚 Betterplace](#) • [📸 Instagram](#)
+[🌐 Website](https://SergeiSmazal.github.io/safe_betty/) • [💛 GoFundMe](https://gofund.me/66bceb6dc) • [💚 Betterplace](#) • [📸 Instagram](https://www.instagram.com/bettyhomecat?igsh=MTVza3EyYjl5bGptNA==)
 
 </div>
 
