@@ -148,7 +148,7 @@ nav {
 
 .lang-switcher {
   display: flex;
-  gap: var(--space-3);
+  gap: 15px;
 }
 
 /* Gallery */
