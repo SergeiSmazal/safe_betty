@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Betty](https://img.shields.io/badge/Betty-12%20years%20old-pink?style=for-the-badge)
+![Betty](https://img.shields.io/badge/Betty-11%20years%20old-pink?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-1.200%20%E2%82%AC-brightgreen?style=for-the-badge)
 
 > **Betty is 11 years old, suffering from inflamed teeth and an autoimmune disease.**  
