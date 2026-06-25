@@ -27,5 +27,11 @@ async function updateProgress() {
   }
 }
 
-// Update on load - wait for i18n to load
+// Update on load and when language changes
 window.addEventListener('load', updateProgress);
+// Override i18n.apply to update progress bar labels on language switch
+const originalApply = i18n.apply;
+i18n.apply = function() {
+  originalApply.call(this);
+  updateProgress();
+};
