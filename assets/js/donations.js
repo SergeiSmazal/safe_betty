@@ -16,9 +16,11 @@ async function updateProgress() {
   const fill = document.querySelector('.progress-bar-fill');
   if (fill) fill.style.width = percent + '%';
 
-  const dateEl = document.getElementById('last-updated');
-  if (dateEl && i18n.translations['last_updated']) {
-    dateEl.textContent = i18n.translations['last_updated'].replace('{date}', data.updated);
+  const textEl = document.getElementById('progress-text');
+  if (textEl && i18n.translations['progress_text']) {
+    textEl.textContent = i18n.translations['progress_text']
+      .replace('{collected}', total)
+      .replace('{goal}', GOAL);
   }
 }
 

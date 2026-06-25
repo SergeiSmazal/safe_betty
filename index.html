@@ -10,9 +10,12 @@
     <header>
         <nav>
             <div class="logo" data-i18n="title">Help Betty 🐾</div>
-            <div class="lang-switcher">
-                <button onclick="i18n.load('de')">DE</button>
-                <button onclick="i18n.load('en')">EN</button>
+            <div class="nav-links">
+                <a href="https://www.instagram.com/bettyhomecat?igsh=MTVza3EyYjl5bGptNA==" target="_blank" class="nav-link">Instagram</a>
+                <div class="lang-switcher">
+                    <button onclick="i18n.load('de')">DE</button>
+                    <button onclick="i18n.load('en')">EN</button>
+                </div>
             </div>
         </nav>
     </header>
@@ -42,10 +45,12 @@
 
         <section id="donate" class="donate">
             <h2 data-i18n="donate_title">Donations</h2>
-            <div class="progress-bar">
-                <div class="progress-bar-fill"></div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <p id="progress-text" class="progress-text"></p>
             </div>
-            <p id="last-updated"></p>
             <a href="https://gofund.me/d271bda22" target="_blank" class="btn-primary" data-i18n="donate_btn">Donate now</a>
         </section>
 
@@ -57,7 +62,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Sergei Smazal | <a href="https://www.instagram.com/bettyhomecat?igsh=MTVza3EyYjl5bGptNA==" target="_blank">Instagram</a></p>
+        <p>&copy; 2026 Sergei Smazal</p>
     </footer>
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/donations.js"></script>
