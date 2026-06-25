@@ -2,6 +2,8 @@
 @import 'variables.css';
 @import 'components.css';
 @import 'animations.css';
+@import 'lightbox.css';
+
 
 * {
   margin: 0;
