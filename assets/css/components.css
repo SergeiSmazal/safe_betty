@@ -77,13 +77,24 @@
   text-align: center;
 }
 
+.progress-container {
+  max-width: var(--container-narrow);
+  margin: var(--space-4) auto;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
 .progress-bar {
   height: 16px;
   background-color: #eee;
   border-radius: var(--radius-full);
-  margin: var(--space-4) auto;
   overflow: hidden;
-  max-width: var(--container-narrow);
 }
 
 .progress-bar-fill {

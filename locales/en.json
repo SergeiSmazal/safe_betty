@@ -10,5 +10,6 @@
   "story_text_4": "My body is already weakened by the autoimmune condition, and this constant dental pain is making everything worse. The veterinarian stated that an immediate surgery to extract all the affected teeth is absolutely necessary to free me from this torment.",
   "story_text_5": "Why We Need Your Help: Unfortunately, I do not have pet health insurance. My family is currently facing a severe financial crisis, and they are completely unable to afford the high costs of this urgent FORL surgery on their own. We can immediately provide the official veterinary diagnosis and the cost estimate from the animal clinic to anyone who wishes to verify our story.",
   "story_text_6": "We are incredibly grateful for any form of help, donation, or shared link. Every little bit counts to end my daily suffering and help me live a happy, pain-free life again. Thank you from the bottom of our hearts for your kindness and support! ❤️",
-  "progress_text": "{collected} € of {goal} € collected"
+  "collected_label": "Collected: {amount} €",
+  "goal_label": "Goal: {amount} €"
 }

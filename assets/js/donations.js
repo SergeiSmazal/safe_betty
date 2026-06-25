@@ -16,11 +16,14 @@ async function updateProgress() {
   const fill = document.querySelector('.progress-bar-fill');
   if (fill) fill.style.width = percent + '%';
 
-  const textEl = document.getElementById('progress-text');
-  if (textEl && i18n.translations['progress_text']) {
-    textEl.textContent = i18n.translations['progress_text']
-      .replace('{collected}', total)
-      .replace('{goal}', GOAL);
+  const collectedEl = document.getElementById('progress-collected');
+  const goalEl = document.getElementById('progress-goal');
+  
+  if (collectedEl && i18n.translations['collected_label']) {
+    collectedEl.textContent = i18n.translations['collected_label'].replace('{amount}', total);
+  }
+  if (goalEl && i18n.translations['goal_label']) {
+    goalEl.textContent = i18n.translations['goal_label'].replace('{amount}', GOAL);
   }
 }
 
