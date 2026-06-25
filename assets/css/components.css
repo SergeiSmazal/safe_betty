@@ -126,6 +126,14 @@ nav {
   margin: 0 auto;
 }
 
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+}
+
+
 .nav-links {
   display: flex;
   align-items: center;
