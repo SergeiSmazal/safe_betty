@@ -1,6 +1,6 @@
 import csv
 import json
-import urllib.request
+import subprocess
 import os
 
 # Configuration
@@ -11,18 +11,24 @@ TARGET_ROW = 14 # Row 15 (0-indexed)
 TARGET_COL = 1  # Column B (0-indexed)
 
 def update_donations():
-    # 1. Fetch CSV
+    # 1. Fetch CSV using curl
     print("Fetching data from Google Sheet...")
-    response = urllib.request.urlopen(CSV_URL)
-    lines = [line.decode('utf-8') for line in response.readlines()]
-    reader = csv.reader(lines)
-    data = list(reader)
+    try:
+        csv_content = subprocess.check_output(['curl', '-L', CSV_URL]).decode('utf-8')
+        lines = csv_content.splitlines()
+        reader = csv.reader(lines)
+        data = list(reader)
+    except Exception as e:
+        print(f"Error fetching data: {e}")
+        return
 
     # 2. Extract value from B15
     try:
         new_amount = float(data[TARGET_ROW][TARGET_COL])
     except (IndexError, ValueError) as e:
         print(f"Error extracting value: {e}")
+        # Print a bit of data to debug
+        print(f"Data snippet: {data[TARGET_ROW] if len(data) > TARGET_ROW else 'Row not found'}")
         return
 
     # 3. Read current json
@@ -30,8 +36,6 @@ def update_donations():
         json_data = json.load(f)
 
     # 4. Update if changed
-    # Assuming the total amount in B15 represents the "direct" donations or total, 
-    # adjust logic as needed. Based on our chat, let's update 'direct'.
     if json_data.get('direct') != new_amount:
         print(f"Updating direct donations from {json_data.get('direct')} to {new_amount}")
         json_data['direct'] = new_amount
